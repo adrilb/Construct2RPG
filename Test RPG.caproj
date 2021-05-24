@@ -10,10 +10,14 @@
     <unique-id>ec05cii7fr2b</unique-id>
     <saved-with-version>27900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -107,6 +111,32 @@
                     <frame duration="1" hotspotX="0" hotspotY="0" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="buttonPlay" sid="361171729303281">
+            <plugin id="Button" />
+            <instance-variables>
+                <instance-variable name="isPlaying" sid="178108519798913" type="boolean" />
+            </instance-variables>
+        </object-type>
+        <object-type name="darkBackground" sid="190537151988290">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="textTime" sid="691445924473082">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="203060444438878">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="textResetTime" sid="698022682488034">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="112910641980749">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
         </object-type>
     </object-folder>
     <families />
